@@ -1,102 +1,197 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="it">
   <head>
+    <!-- Imposto charset e viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <a href="#footer">Scorri giù</a>
-    <h1>Abanob Said</h1>
-    <h2>aba.said2002@gmail.com</h2>
 
-    <main>
-      <div style="text-align: left; margin: 10px 0">
-        <a href="#">
-          <img src="./assets/img.jpg" alt="Foto di Abanob Said" width="100" />
+    <!-- Metto un titolo più chiaro -->
+    <title>Profilo - Abanob Said</title>
+
+    <!-- Raccolgo qui gli stili base -->
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+        margin: 16px;
+      }
+
+      .text-justify {
+        text-align: justify;
+      }
+
+      .photo {
+        margin: 10px 0;
+        text-align: left;
+      }
+
+      table {
+        border-collapse: collapse;
+        margin-top: 10px;
+        width: 100%;
+        max-width: 800px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+
+      caption {
+        text-align: left;
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+
+      .section {
+        margin-top: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Metto un link rapido per scendere -->
+    <nav aria-label="Navigazione rapida">
+      <a href="#footer">Scorri giù</a>
+    </nav>
+
+    <!-- Inserisco nome ed email -->
+    <header class="section">
+      <h1>Abanob Said</h1>
+
+      <!-- Rendo l’email cliccabile -->
+      <p><a href="mailto:aba.said2002@gmail.com">aba.said2002@gmail.com</a></p>
+    </header>
+
+    <!-- Qui inizia il contenuto principale -->
+    <main class="section" id="profilo">
+      <!-- Mostro la mia foto -->
+      <div class="photo">
+        <a href="./assets/img.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/img.jpg" alt="Foto di Abanob Said" width="120" />
         </a>
       </div>
-      <p style="text-align: justify">
-        Mi chiamo Abanob Said, nato l’11 aprile 2002. Sono cresciuto in Egitto fino all’età di undici anni e, nel 2013, mi sono trasferito in Italia, dove ho
-        proseguito il mio percorso scolastico frequentando la scuola secondaria di primo e secondo grado. E in fine nel 2020 ho conseguito il diploma in
-        Economia Aziendale.
-      </p>
 
-      <p style="text-align: justify">
-        Nel tempo libero mi piace dedicarmi all’escursionismo e al ciclismo, partecipare ad attività di gruppo e viaggiare per scoprire nuovi luoghi e culture;
-        inoltre coltivo la passione per il collezionismo di monete.
-      </p>
-      <a href="https://github.com/" target="_blank"> vai al mio github</a>
-    </main>
-    <p style="text-align: justify">
-      Vivo in Italia e sto cercando di costruirmi una vita stabile tra lavoro e studio. Sono una persona tranquilla, che preferisce le cose semplici: un caffè
-      al mattino, una passeggiata e qualche serie la sera. <a href="#">Ho avuto esperienze di lavoro a contatto con il pubblico</a>, che mi hanno insegnato
-      pazienza e rispetto verso le persone. Nel tempo libero mi piace imparare cose nuove e migliorare.
-    </p>
+      <!-- Presento chi sono -->
+      <section class="section" aria-labelledby="chi-sono">
+        <h2 id="chi-sono">Chi sono</h2>
 
-    <div>
-      <h3>
-        <strong>le mie competenze:</strong>
-        <ul style="font-weight: normal !important; font-size: small">
+        <p class="text-justify">
+          Mi chiamo Abanob Said, nato l’11 aprile 2002. Sono cresciuto in Egitto fino all’età di undici anni e, nel 2013, mi sono trasferito in Italia, dove ho
+          proseguito il mio percorso scolastico frequentando la scuola secondaria di primo e secondo grado. Infine, nel 2020, ho conseguito il diploma in
+          Economia Aziendale.
+        </p>
+
+        <p class="text-justify">
+          Nel tempo libero mi piace dedicarmi all’escursionismo e al ciclismo, partecipare ad attività di gruppo e viaggiare per scoprire nuovi luoghi e
+          culture. Inoltre coltivo la passione per il collezionismo di monete.
+        </p>
+
+        <!-- Link al mio GitHub -->
+        <p>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer"> Vai al mio GitHub </a>
+        </p>
+      </section>
+
+      <!-- Aggiungo una parte più personale -->
+      <section class="section" aria-labelledby="obiettivi">
+        <h2 id="obiettivi">Obiettivi e carattere</h2>
+
+        <p class="text-justify">
+          Vivo in Italia e sto cercando di costruirmi una vita stabile tra lavoro e studio. Sono una persona tranquilla, che preferisce le cose semplici: un
+          caffè al mattino, una passeggiata e qualche serie la sera.
+          <a href="#esperienze-professionali">Ho avuto esperienze di lavoro a contatto con il pubblico</a>, che mi hanno insegnato pazienza e rispetto verso le
+          persone. Nel tempo libero mi piace imparare cose nuove e migliorarmi.
+        </p>
+      </section>
+
+      <!-- Inserisco competenze -->
+      <section class="section" aria-labelledby="competenze">
+        <h2 id="competenze">Competenze</h2>
+
+        <h3>Le mie competenze</h3>
+        <ul>
           <li>Buona conoscenza di Microsoft Office (Word, Excel, PowerPoint)</li>
           <li>Competenze di base in programmazione (HTML, CSS, JavaScript)</li>
           <li>Capacità di lavorare in team e comunicazione efficace</li>
           <li>Problem solving e gestione del tempo</li>
         </ul>
-      </h3>
 
-      <h3>
-        <strong>competenze da acquisire:</strong>
-      </h3>
-      <ol style="font-weight: normal !important; font-size: small">
-        <li>Approfondire le conoscenze di programmazione web (JavaScript avanzato, framework come React o Angular)</li>
-        <li>Imparare a utilizzare strumenti di sviluppo come Git e GitHub</li>
-        <li>Acquisire conoscenze di base su database e SQL</li>
-      </ol>
-    </div>
+        <h3>Competenze da acquisire</h3>
+        <ol>
+          <li>Approfondire la programmazione web (JS avanzato, React o Angular)</li>
+          <li>Imparare a usare Git e GitHub</li>
+          <li>Acquisire basi di database e SQL</li>
+        </ol>
+      </section>
 
-    <table>
-      <strong style="font-size: large">Le mie esperienze accademiche:</strong>
-      <tr>
-        <th>Anno</th>
-        <th>Istituto</th>
-        <th>Corso</th>
-      </tr>
-      <tr>
-        <td>2015/2020</td>
-        <td>Istituto professionale Oriani Mazzini</td>
-        <td>economia aziedale</td>
-      </tr>
-    </table>
+      <!-- Inserisco studi -->
+      <section class="section" aria-labelledby="esperienze-accademiche">
+        <h2 id="esperienze-accademiche">Esperienze accademiche</h2>
 
-    <div style="margin-top: 20px">
-      <table>
-        <strong style="font-size: large">Le mie esperienze professionali:</strong>
-        <tr>
-          <th>Anno</th>
-          <th>Luogo</th>
-          <th>Mansione</th>
-        </tr>
-        <tr>
-          <td>2021/2023</td>
-          <td>lavanderia</td>
-          <td>gestione della cassa</td>
-        </tr>
-        <tr>
-          <td>2023/2023</td>
-          <td>CAF patronato</td>
-          <td>compilazione e gestione delle pratiche amministrative</td>
-        </tr>
-        <tr>
-          <td>2023/2025</td>
-          <td>Zity</td>
-          <td>addetto ricarica auto elettriche</td>
-        </tr>
-      </table>
-    </div>
+        <table>
+          <caption>
+            Le mie esperienze accademiche
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Anno</th>
+              <th scope="col">Istituto</th>
+              <th scope="col">Corso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2015/2020</td>
+              <td>Istituto Professionale Oriani Mazzini</td>
+              <td>Economia aziendale</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <footer id="footer">
+      <!-- Inserisco lavori -->
+      <section class="section" aria-labelledby="esperienze-professionali">
+        <h2 id="esperienze-professionali">Esperienze professionali</h2>
+
+        <table>
+          <caption>
+            Le mie esperienze professionali
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Anno</th>
+              <th scope="col">Luogo</th>
+              <th scope="col">Mansione</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2021/2023</td>
+              <td>Lavanderia</td>
+              <td>Gestione della cassa</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td>CAF / Patronato</td>
+              <td>Gestione pratiche amministrative</td>
+            </tr>
+            <tr>
+              <td>2023/2025</td>
+              <td>Zity</td>
+              <td>Addetto ricarica auto elettriche</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- Chiudo con il footer -->
+    <footer id="footer" class="section">
       <p>© Abanob Said</p>
+      <a href="#profilo">Torna su</a>
     </footer>
   </body>
 </html>
